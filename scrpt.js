@@ -1,3 +1,29 @@
+//1
+const resB1 = document.querySelector("#resB1");
+const res1 = document.querySelector("#res1");
+const arr1 = [1, 2, 3];
+
+resB1.addEventListener("click", ()=> {
+    arr1[1] = 10;
+    res1.textContent = arr1;
+});
+
+//2
+const resB2 = document.querySelector("#resB2");
+const res2 = document.querySelector("#res2");
+const arr2 = ["str0", "str1", "str2"];
+
+resB2.addEventListener("click", ()=> {
+    arr2.push("str3") /* || arr[3] = "str3" || [arr2.length] = "str3"*/;
+    res2.textContent = arr2;
+});
+
+//3
+const resB3 = document.querySelector("#resB3");
+const res3 = document.querySelector("#res3");
+const arr3 = [1, 2, 3];
+let res3TC = 0;
+
 resB3.addEventListener("click", ()=> {
     for (let i = 0; i < arr3.length; i++) {
         res3TC += arr3[i];
